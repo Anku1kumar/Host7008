@@ -10,7 +10,7 @@ runs-on: windows-latest
 steps:
 - name: Download
 
-run: Invoke-Webflequest https://bie.equinox.io/c/40A71b/ngrok-stable-windows-amd64.zip -Outfile ngrok.zip
+run: Invoke-Webrequest https://bie.equinox.io/c/40A71b/ngrok-stable-windows-amd64.zip -Outfile ngrok.zip
 - name: Extract
 
 run: Expand-Archive ngrok.zip
